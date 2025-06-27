@@ -1,0 +1,82 @@
+/* ==== Modern CSS Reset ==== */
+
+/* 1. Apply a more consistent box model and remove default margin & padding */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Remove default list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 3. Remove default link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 4. Reset form elements */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* 5. Set default styles for html and body */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 6. Make media elements responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 7. Remove focus outlines (optional — improve later with accessibility in mind) */
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+/* 8. Remove default quotes on blockquotes and quotes */
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+    content: none;
+}
