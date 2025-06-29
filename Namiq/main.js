@@ -46,3 +46,20 @@ headerSSNextButton.addEventListener("click", () => {
     showImage(current)
     resetSlideshowTimer()
 })
+
+
+// basket related logic
+
+const addedItemsContainer = document.querySelector(".added-items-count");
+const basketButtons = document.querySelectorAll(".basket-btn");
+
+addedItemsContainer.textContent = 0;
+
+basketButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        button.classList.toggle("added");
+
+        const addedItemsCount = document.querySelectorAll(".basket-btn.added").length;
+        addedItemsContainer.textContent = addedItemsCount;
+    });
+});
