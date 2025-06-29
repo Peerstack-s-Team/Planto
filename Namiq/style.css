@@ -164,6 +164,7 @@ body {
 
 .btn-cnr {
     display: flex;
+    align-items: center;
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -369,9 +370,199 @@ body {
     transition: width 0.7s ease, border-radius 0.3s ease;
 }
 
+/* =============== TRENDY PLANTS SECTION =============== */
+
+.trendy-plants-section {
+    padding: 10rem min(5.6rem, 7vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
+}
+
+.section-heading {
+    font-size: 1rem;
+    position: relative;
+    padding: 2em 3.5em;
+}
+
+.section-heading h2 {
+    font-size: 5.5em;
+}
+
+.sh-top-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80%;
+}
+
+.sh-bottom-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80%;
+}
+
+.trendy-plant-item {
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    padding: max(8rem, 6.5vw) min(8rem, 10vw);
+    border-radius: 15em;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px rgb(255, 255, 255, 0.3) solid;
+    backdrop-filter: blur(12px);
+    justify-content: space-between;
+}
+
+.trendy-plant-item.item-2 {
+    flex-direction: row-reverse;
+}
+
+
+.trendy-plant-item .image-cnr {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    position: relative;
+}
+
+.trendy-plant-item.item-2 .image-cnr {
+    justify-content: flex-end;
+}
+
+.trendy-plant-item img {
+    height: 50em;
+    position: absolute;
+    bottom: 0;
+}
+
+.trendy-plant-item .info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.trendy-plant-item .heading,
+.trendy-plant-item .price {
+    font-size: 3.8em;
+}
+
+.trendy-plant-item .body {
+    font-size: max(2em, 15px);
+}
+
+.trendy-plant-item .buttons-cnr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+}
+
+.trendy-plant-item .basket-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 3.4em;
+    border: 2px white solid;
+    border-radius: 0.43em;
+    padding: 0.44em;
+}
+
+.basket-btn:hover,
+.basket-btn:hover>i {
+    background-color: white;
+    color: black;
+}
+
+.added {
+    background-color: rgb(173, 147, 0);
+}
+
+.added:hover,
+.added:hover>i {
+    background-color: rgb(133, 113, 0);
+    color: white;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    width: max-content;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(173, 147, 0);
+    font-size: 2.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+.tooltip::after {
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: -0.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    rotate: 45deg;
+    background-color: rgb(173, 147, 0);
+    z-index: -1;
+}
+
+.trendy-plant-item .basket-btn:hover>.add-tooltip {
+    display: block;
+}
+
+.trendy-plant-item .basket-btn.added:hover>.remove-tooltip {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1440px) {
     .heading-section {
         gap: 10vw;
+    }
+
+    .trendy-plant-item {
+        flex-direction: column !important;
+        padding-top: 16em;
+        align-items: center;
+    }
+
+    .trendy-plant-item .image-cnr,
+    .trendy-plant-item.item-2 .image-cnr {
+        width: 100%;
+        height: 20rem;
+        justify-content: center;
+        justify-content: center;
+    }
+
+    .trendy-plant-item .info {
+        width: 100%;
     }
 }
 
@@ -400,6 +591,7 @@ body {
 
 }
 
+@media (max-width: 1024px) {}
 
 @media (max-width: 700px) {
 
@@ -414,7 +606,8 @@ body {
         padding: 10rem 20px;
     }
 
-    .heading-text {
+    .heading-text,
+    .trendy-plant-item {
         font-size: 0.7rem;
     }
 
@@ -431,12 +624,20 @@ body {
 
     .heading-slideshow-cnr .overlay {
         border-radius: 40px;
-        clip-path: path("M 0 0 H 40 Q 170 20 300 0 H 340 V 650 H 0 Z");
+        clip-path: path("M 0 0 H 40 Q 170 15 300 0 H 340 V 650 H 0 Z");
     }
 
 
     .heading-slideshow-cnr img {
         height: 35em;
+    }
+
+    .section-heading {
+        font-size: 0.7rem;
+    }
+
+    .trendy-plant-item {
+        padding-top: 10em;
     }
 }
 
@@ -444,5 +645,9 @@ body {
 
     .header-icons {
         font-size: 0.8rem;
+    }
+
+    .trendy-plant-item {
+        border-radius: 10em;
     }
 }
