@@ -1,0 +1,256 @@
+body {
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftsection {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.leftsection img {
+  margin: 0px;
+  width: 75px;
+  height: 75px;
+  margin-top: 35px;
+  padding-top: 15px;
+}
+.leftsection p {
+  margin: 0;
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+}
+.rightup {
+  display: flex;
+  gap: 15px;
+  margin-right: 25px;
+}
+.topmiddle {
+  display: flex;
+  gap: 25px;
+}
+.topmiddle {
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+.rightup {
+  display: flex;
+  gap: 15px;
+}
+.rightup img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+}
+.wrds {
+  color: white;
+}
+.wrds h1 {
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+#explr-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid white;
+}
+#dm-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.plantcard {
+  width: 300px;
+  margin-left: auto;
+  margin-right: 50px;
+  color: white;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 80px 20px 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.plant-img {
+  position: absolute;
+  margin-bottom: 15px;
+  top: -120px;
+  left: 50%;
+  width: 290px;
+  transform: translateX(-50%);
+}
+
+#buy-btn {
+  padding: 8px 15px;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 1px solid white;
+}
+
+.cmnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 30px;
+  width: 400px;
+  margin: 50px;
+  text-align: center;
+}
+.cmnt img {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.cmnt p {
+  color: white;
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.cmnt p {
+  margin-left: 15px;
+}
+
+/* resposivity */
+/* For tablets*/
+@media (max-width: 1024px) {
+  body {
+    background-color: black;
+    background-image: none;
+  }
+  .plant-img {
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ .plantcard {
+    margin: 20px auto;
+    width: 300px;
+  }
+  .cmnt {
+    max-width: 80%;
+  }
+}
+
+/*for mobile*/
+@media (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+  }
+  .topmiddle {
+    display: none;
+  }
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .rightup {
+    gap: 10px;
+    margin-right: 10px;
+  }
+  .section1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .wrds h1 {
+    font-size: 40px;
+  }
+
+  .wrds p {
+    font-size: 16px;
+  }
+  
+
+
+  .plantcard {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .plant-img {
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+  }
+  .cmnt {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+}
+.cmnt p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .cmnt img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+
