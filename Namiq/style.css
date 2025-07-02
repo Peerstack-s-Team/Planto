@@ -24,6 +24,10 @@ button {
     cursor: pointer;
 }
 
+body {
+    background-color: #1B2316;
+}
+
 
 /* =============== PLANT BACKGROUND =============== */
 
@@ -158,10 +162,6 @@ h1 {
     font-size: 2.8em;
 }
 
-body {
-    background-color: black;
-}
-
 .btn-cnr {
     display: flex;
     align-items: center;
@@ -265,7 +265,7 @@ body {
     font-size: 1.8rem;
 }
 
-.heading-slideshow-cnr {
+.curvy-box {
     font-size: 10px;
     position: relative;
     padding: 340px 50px 40px 70px;
@@ -277,11 +277,11 @@ body {
     margin-top: 140px;
 }
 
-.heading-slideshow-cnr .overlay {
+.curvy-box .overlay {
     position: absolute;
     inset: 0;
     border-radius: 80px;
-    clip-path: path("M 0 0 H 80 Q 255 15 430 0 H 510 V 650 H 0 Z");
+    clip-path: path("M 0 0 H 80 Q 255 20 430 0 H 510 V 1000 H 0 Z");
     backdrop-filter: blur(5px);
     background-color: rgb(255, 255, 255, 0.08);
     z-index: -1;
@@ -296,6 +296,9 @@ body {
 
 .heading-slideshow-cnr img {
     display: none;
+}
+
+.curvy-box img {
     height: 46em;
     position: absolute;
     left: 50%;
@@ -316,19 +319,19 @@ body {
     }
 }
 
-.heading-slideshow-cnr .left {
+.curvy-box .left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2em;
 }
 
-.heading-slideshow-cnr .plant-category {
+.curvy-box .plant-category {
     font-size: 2.4em;
     animation: slideInRight 0.5s ease-in;
 }
 
-.heading-slideshow-cnr .plant-name {
+.curvy-box .plant-name {
     font-size: 3.8em;
     animation: slideInRight 0.5s ease-in;
 }
@@ -345,13 +348,13 @@ body {
     }
 }
 
-.heading-slideshow-cnr .right-arrow-icon {
+.curvy-box .right-arrow-icon {
     font-size: 3em;
     cursor: pointer;
     transition: transform .1s ease;
 }
 
-.heading-slideshow-cnr .right-arrow-icon:hover {
+.curvy-box .right-arrow-icon:hover {
     transform: scale(1.2);
 }
 
@@ -384,6 +387,7 @@ body {
     font-size: 1rem;
     position: relative;
     padding: 2em 3.5em;
+    width: max-content;
 }
 
 .section-heading h2 {
@@ -463,7 +467,7 @@ body {
     gap: 3rem;
 }
 
-.trendy-plant-item .basket-btn {
+.basket-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -517,22 +521,66 @@ body {
     z-index: -1;
 }
 
-.trendy-plant-item .basket-btn:hover>.add-tooltip {
+.basket-btn:hover>.add-tooltip {
     display: block;
 }
 
-.trendy-plant-item .basket-btn.added:hover>.remove-tooltip {
+.basket-btn.added:hover>.remove-tooltip {
     display: block;
 }
 
 
 
 
+/* =============== TOP SELLING SECTION =============== */
+
+.top-selling-section {
+    padding: 15rem 4.5rem 22rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tss-items-container {
+    margin-top: 14rem;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 100px;
+}
+
+.tss-item {
+    padding-bottom: 50px;
+}
+
+.tss-item-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.6em;
+    align-items: flex-start;
+}
 
 
+.tss-item-info .heading {
+    font-size: 3.8em;
+}
 
+.tss-item-info .body {
+    font-size: 2.4em;
+}
 
+.tss-item-info .order-cnr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.tss-item-info .price {
+    font-size: 3.8em;
+}
 
 
 
@@ -591,6 +639,7 @@ body {
 
 }
 
+
 @media (max-width: 1024px) {}
 
 @media (max-width: 700px) {
@@ -615,20 +664,20 @@ body {
         margin-top: 12rem;
     }
 
-    .heading-slideshow-cnr {
+    .curvy-box {
         font-size: 8px;
         padding: 200px 50px 40px 70px;
         width: 340px;
         border-radius: 40px;
     }
 
-    .heading-slideshow-cnr .overlay {
+    .curvy-box .overlay {
         border-radius: 40px;
-        clip-path: path("M 0 0 H 40 Q 170 15 300 0 H 340 V 650 H 0 Z");
+        clip-path: path("M 0 0 H 40 Q 170 20 300 0 H 340 V 1000 H 0 Z");
     }
 
 
-    .heading-slideshow-cnr img {
+    .curvy-box img {
         height: 35em;
     }
 
