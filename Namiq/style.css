@@ -717,6 +717,135 @@ h1 {
     width: 1.1rem;
 }
 
+
+/* =============== CUSTOMER REVIEW SECTION =============== */
+
+footer {
+    padding: 9rem 3.8rem 8.8rem 7.6rem;
+}
+
+.ft-main {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ft-main>* {
+    flex-grow: 1;
+}
+
+.ft-main .body {
+    width: clamp(350px, 40vw, 600px);
+}
+
+.ft-main .logo {
+    height: 9.4rem;
+}
+
+.ft-main .logo-cnr .planto {
+    font-size: 5.8rem;
+}
+
+.ft-main .body .info {
+    font-size: 2.8rem;
+    margin-top: 4.3rem;
+}
+
+.ft-links-cnr {
+    width: max-content;
+}
+
+.ft-links-cnr .links-header {
+    font-size: 3.4rem;
+    white-space: nowrap;
+}
+
+.ft-links-cnr ul {
+    margin-top: 4.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+}
+
+.ft-links-cnr a {
+    font-size: 2.4rem;
+}
+
+.subscribe-cnr {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.subscribe-cnr p {
+    font-size: 3.4rem;
+}
+
+.input-cnr {
+    display: flex;
+    align-items: center;
+    width: 56.2rem;
+    position: relative;
+}
+
+.subscribe-btn {
+    background-color: white;
+    position: absolute;
+    height: 90%;
+    right: 1%;
+    padding: 0 2rem;
+    font-size: 2.2rem;
+    border-radius: 0.8rem;
+    color: black;
+    font-weight: bold;
+}
+
+input {
+    background-color: transparent;
+    font-size: 2.4rem;
+    padding: 2.2rem 17rem 2.2rem 3rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    border: 2px white solid;
+    color: rgba(255, 255, 255, 0.75);
+    outline: none;
+}
+
+
+.ft-end {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+.social-cnr {
+    display: flex;
+    gap: 5rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 2.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1440px) {
     .heading-section {
         gap: 10vw;
@@ -854,6 +983,29 @@ h1 {
 
     .bo2-main .plant-1 {
         height: max(70vw, 360px);
+    }
+
+    .input-cnr {
+        width: 80%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .subscribe-cnr {
+        align-items: center;
+    }
+
+    .subscribe-btn {
+        position: relative;
+        height: auto;
+        padding: 2.2rem;
+        right: 0;
+    }
+
+
+    .ft-end {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
