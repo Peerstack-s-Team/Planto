@@ -361,6 +361,7 @@ h1 {
 
 .header-ss-pagination-cnr {
     display: flex;
+    justify-content: center;
     gap: 1em;
     margin-top: 3.6em;
 }
@@ -449,7 +450,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 2.5em;
 }
 
 .trendy-plant-item .heading,
@@ -638,10 +639,83 @@ h1 {
 }
 
 
+/* =============== BEST O2 SECTION =============== */
 
+.best-o2-section {
+    padding: 28.5rem 4.5rem 17rem 8.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.bo2-main-container {
+    width: 100%;
+    margin-top: 35rem;
+}
 
+.bo2-main {
+    padding: 10rem 7rem 17rem 7rem;
+}
 
+.bo2-main .image-cnr {
+    justify-content: center;
+    width: 50%;
+}
+
+.bo2-main img {
+    display: none;
+    height: 78rem;
+    /* bottom: -9rem; */
+    animation: fadeIn .3s linear;
+}
+
+.bo2-main .plant-1 {
+    height: 68rem;
+    transform: translateX(-5rem);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.bo2-main .info {
+    gap: 4.2em;
+    width: 50%;
+}
+
+.bo2-main .body {
+    font-size: 2.8em;
+}
+
+.bo2-main .buttons-cnr {
+    justify-content: space-between;
+}
+
+.bo2-main .pagination-buttons-cnr {
+    display: flex;
+    gap: 2.15em;
+    font-size: 20px;
+    align-items: center;
+}
+
+.arrow-icon {
+    font-size: 24px;
+}
+
+.bo2-main-container .header-ss-pagination-cnr {
+    margin-top: 9.8rem;
+}
+
+.bo2-main-container .pagination-dot {
+    height: 1.1rem;
+    width: 1.1rem;
+}
 
 @media (max-width: 1440px) {
     .heading-section {
@@ -664,6 +738,21 @@ h1 {
 
     .trendy-plant-item .info {
         width: 100%;
+    }
+
+    .best-o2-section {
+        padding: 28.5rem 4rem 17rem 4rem;
+    }
+
+    .bo2-main img {
+        display: none;
+        height: 70rem;
+        /* bottom: -9rem; */
+        /* transform: translateX(-8rem); */
+    }
+
+    .bo2-main .plant-1 {
+        transform: translateX(0);
     }
 }
 
@@ -691,9 +780,6 @@ h1 {
     }
 
 }
-
-
-@media (max-width: 1024px) {}
 
 @media (max-width: 700px) {
 
@@ -729,7 +815,6 @@ h1 {
         clip-path: path("M 0 0 H 40 Q 170 20 300 0 H 340 V 1000 H 0 Z");
     }
 
-
     .curvy-box img {
         height: 35em;
     }
@@ -754,6 +839,22 @@ h1 {
     .cr-item .author-cnr {
         gap: 3em;
     }
+
+    .bo2-main {
+        padding: 10rem 4rem 12rem 4rem;
+    }
+
+    .bo2-main .pagination-buttons-cnr {
+        font-size: 16px;
+    }
+
+    .bo2-main img {
+        height: max(80vw, 400px);
+    }
+
+    .bo2-main .plant-1 {
+        height: max(70vw, 360px);
+    }
 }
 
 @media (max-width: 500px) {
@@ -764,5 +865,9 @@ h1 {
 
     .trendy-plant-item {
         border-radius: 10em;
+    }
+
+    .bo2-main .buttons-cnr {
+        justify-content: center;
     }
 }
