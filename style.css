@@ -54,6 +54,47 @@ body{
     cursor: pointer;
 }
 
+.main_section{
+    padding: 40px;
+}
+
+.main_section h1{
+    font-size: 70px;
+}
+
+.h1_cont{
+    line-height: 0px;
+}
+
+.h1_descraption{
+    width: 31%;
+}
+
+.explore_button button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ccc !important;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+.main_buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.live_button{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.live_button i{
+    font-size: 30px;
+}
+
 
 @media (max-width:1024px){
 
@@ -77,6 +118,4 @@ body{
         display: none;
     }
 
-    .logo{
-    }
 }
