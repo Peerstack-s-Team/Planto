@@ -275,13 +275,14 @@ h1 {
     flex-direction: column;
     align-items: center;
     margin-top: 140px;
+    box-shadow: 0 9px 18.4px rgba(0, 0, 0, 0.25);
 }
 
 .curvy-box .overlay {
     position: absolute;
     inset: 0;
     border-radius: 80px;
-    clip-path: path("M 0 0 H 80 Q 255 20 430 0 H 510 V 1000 H 0 Z");
+    clip-path: path("M 0 0 H 80 Q 255 18 430 0 H 510 V 1000 H 0 Z");
     backdrop-filter: blur(5px);
     background-color: rgb(255, 255, 255, 0.08);
     z-index: -1;
@@ -583,6 +584,58 @@ h1 {
 }
 
 
+/* =============== CUSTOMER REVIEW SECTION =============== */
+
+.customer-review-section {
+    padding: 22rem 6.3rem 28.5rem 6.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 18.2rem;
+    align-items: center;
+}
+
+.cr-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.3rem;
+    row-gap: 8em;
+}
+
+.cr-item {
+    padding: 91px 51px 95px 58px;
+    gap: 6.1em;
+    margin-top: 0;
+}
+
+.cr-item .author-cnr {
+    display: flex;
+    gap: 3.8em;
+    align-items: center;
+    width: 100%;
+}
+
+.cr-item .profile-pic {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    height: 8.8em;
+}
+
+.cr-item .author-name p {
+    font-size: 3.8em;
+    margin-bottom: 5px;
+}
+
+.cr-item .star {
+    color: #FFF84E;
+    font-size: 1.9em;
+}
+
+.cr-item p {
+    font-size: 2.4em;
+}
 
 
 
@@ -687,6 +740,19 @@ h1 {
 
     .trendy-plant-item {
         padding-top: 10em;
+    }
+
+    .tss-items-container {
+        row-gap: 50px;
+    }
+
+    .cr-item {
+        padding: 70px 40px 60px 40px;
+        gap: 3em;
+    }
+
+    .cr-item .author-cnr {
+        gap: 3em;
     }
 }
 
