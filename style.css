@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  font-family: inherit, "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+
+.box {
+  position: absolute;
+  width: 100%;
+  height: 135vw;
+  background: url(img/fa0765984e44f85e1a04562f820f1492949a1257.jpg);
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/*                    header start      */
+header {
+  width: 100%;
+  height: 13vh;
+
+}
+
+.Planto {
+  position: relative;
+  width: 99px;
+  height: 34px;
+  font-size: 40px;
+  top: 20px;
+  left: 70px;
+  opacity: 0.75;
+  color: white;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.Planto:hover {
+  color: #23ce3a;
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+
+
+.Planto::before {
+  display: inline-block;
+  left: -50px;
+  top: -1px;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url(img/5e88b52117aa40baa6a96e43b5c4e57858edaa47.png);
+  background-size: cover;
+  z-index: 10;
+}
+
+
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+
+
+}
+
+.headnav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 25px;
+  width: 45%;
+  height: 26px;
+  top: 66px;
+  left: 20%;
+  opacity: 0.75;
+  color: white;
+  list-style: none;
+
+
+
+  li a {
+    color: white;
+    text-decoration: none;
+
+  }
+}
+
+
+
+.icon {
+  width: 30%;
+  height: 20px;
+  display: flex;
+  justify-content: end;
+  opacity: 0.75;
+  padding-right: 2%;
+}
+
+.icon a img {
+  margin-inline: 10px;
+  width: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon a img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+
+/*                          header end            */
+/*                          @media query for header  */
+
+
+
+@media screen and (max-width:1300px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  header {
+    height: 220vw;
+
+  }
+
+  .Planto {
+    top: 33px;
+    left: 30px;
+    font-size: 15px;
+
+
+  }
+
+  .Planto::before {
+
+    left: -45px;
+    top: -6px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .headnav {
+    display: none;
+  }
+
+
+
+  img {
+    margin-inline: 5px;
+
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .Planto {
+    top: 33px;
+    left: 32px;
+    font-size: 20px;
+
+
+  }
+
+  .Planto::before {
+
+    left: -30px;
+    top: -12px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .headnav {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .headnav {
+    font-size: 20px;
+    width: 445px;
+    height: 26px;
+    top: 66px;
+  }
+
+
+
+
+}
+
+.icon {
+  width: 25%;
+}
+
+/*                           media query end                       */
+/* ------------------------main start ------------------------------- */
+
+
+.hero {
+  display: grid;
+  grid-template-areas:
+    "content image card"
+    "review image card";
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 80px 60px;
+
+  color: white;
+  gap: 40px;
+  position: relative;
+}
+
+.hero__content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero__content h1 {
+  font-size: 78px;
+  font-weight: 690;
+  margin-left: 20px;
+}
+
+.pragraf-hero {
+  font-size: 25px;
+  opacity: 0.75;
+  border-radius: 3px;
+  width: 300px;
+  height: 50px;
+  margin-left: -11px;
+}
+
+.hero__content p {
+  font-size: 25px;
+  opacity: 0.75;
+  border-radius: 3px;
+  width: 600px;
+  height: 50px;
+  margin-left: -11px;
+}
+
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: 2px solid white;
+  border-radius: 12px;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+
+.live-demo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: white;
+  opacity: 0.85;
+}
+
+span {
+  font-size: 20px;
+}
+
+.circle {
+  width: 44px;
+  height: 44px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.circle:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.circle img {
+  width: 14px;
+  height: 14px;
+  transition: filter 0.3s ease;
+}
+
+.circle:hover img {
+  filter: invert(1);
+}
+
+
+.hero__image {
+
+
+
+  height: 500px;
+  position: absolute;
+  left: 33%;
+  top: 50px;
+  z-index: 0;
+}
+
+
+
+.hero__card {
+  grid-area: card;
+  /* background-image: url(img/Rectangle\ 2.svg); */
+  background-size: cover;
+  background-position: center;
+  width: 512px;
+  height: 644px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  border-radius: 60px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__card img {
+
+  object-fit: contain;
+  margin-bottom: 70px;
+  width: 459px;
+  height: 450px;
+  margin-top: -270px;
+}
+
+.hero__card h5 {
+  font-size: 26px;
+  opacity: 0.6;
+  margin-bottom: 40px;
+  margin-left: -155px;
+
+}
+
+.hero__card h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  margin-left: -205px;
+}
+
+.hero__card button {
+  padding: 12px 28px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: -205px;
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+.hero__card button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+.hero__review {
+  grid-area: review;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 396px;
+  height: 250px;
+  margin-left: 230px;
+  margin-top: 130px;
+
+
+}
+
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-top: -90px;
+  margin-left: 15px;
+}
+
+.review__info .name {
+  font-weight: bold;
+  font-size: 22px;
+
+
+}
+
+.review__info .text {
+  width: 310px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+
+
+/* -------------main-section1 end--------- */
+
+/* ---------@media query for section1----------- */
+
+/* @media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .hero__content h1 {
+    font-size: 36px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero__content p {
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .hero__image {
+    position: static;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .hero__card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .hero__card img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .hero__card h5,
+  .hero__card h2,
+  .hero__card button {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero__review {
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .avatar {
+    margin: 0;
+  }
+
+  .review__info {
+    text-align: center;
+  }
+}
+
+.box {
+
+  width: 100%;
+  height: 135vw;
+  background: url(img/fa0765984e44f85e1a04562f820f1492949a1257.jpg);
+  z-index: -1;
+  background-position: center;
+  background-size: cover; */
+
+@media screen and (max-width: 1300px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 20px;
+  }
+
+  .hero__content h1 {
+    font-size: 8px;
+
+    text-align: center;
+  }
+
+  .hero__content p {
+    font-size: 14px;
+    width: 25%;
+
+
+    text-align: center;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .hero__image {
+
+    height: 90px;
+    width: 25%;
+    background-size: cover;
+
+    background-position: center;
+  }
+
+  .hero__card {
+    width: 50%;
+
+    padding: 7.5px;
+    background-size: cover;
+
+  }
+
+  .hero__card img {
+    width: 25%;
+
+    margin-top: 0;
+  }
+
+  .hero__card h5,
+  .hero__card h2,
+  .hero__card button {
+
+    text-align: center;
+  }
+
+  .hero__review {
+    flex-direction: column;
+    width: 25%;
+
+
+    padding: 7.5px;
+    text-align: center;
+  }
+
+  .avatar {
+    margin: 0 auto;
+  }
+
+  .review__info .text {
+    font-size: 8px;
+  }
+
+  .review__info .name {
+    font-size: 10px;
+  }
+}
+
+
+/* -----------------section 1 end------------- */
+/* ----------section 2 star--------- */
+
+.hero-1_1 {
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content1_1 {
+
+
+  font-size: 55px;
+  opacity: 1;
+  color: white;
+
+
+}
+
+.rectangle {
+  width: 95vw;
+  height: 526px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+  opacity: 3;
+  border-radius: 151px;
+  border-width: 14px;
+
+}
+.rose{
+  width: 30%;
+  height: 25%;
+  padding-top: 20px;
+}
