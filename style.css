@@ -52,10 +52,6 @@ header {
     transition: filter 0.3s ease;
 }
 
-.nav-links a:hover {
-    filter: brightness(0.5) contrast(2) saturate(300%) hue-rotate(80deg);
-}
-
 .nav-icons {
     display: flex;
     align-items: center;
@@ -68,10 +64,6 @@ header {
     transition: filter 0.3s ease;
     height: 24px;
     width: 24px;
-}
-
-.nav-icons a img:hover {
-    filter: brightness(0.5) contrast(2) saturate(300%) hue-rotate(80deg);
 }
 
 /* Sidebar styles */
@@ -103,10 +95,6 @@ header {
     align-items: center;
     gap: 5px;
     transition: filter 0.3s ease;
-}
-
-#sidebar a:hover {
-    filter: brightness(0.5) contrast(2) saturate(300%) hue-rotate(80deg);
 }
 
 #closeBtn {
