@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.brand img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+#navigation p {
+    font-size: 28px;
+    font-weight: 900;
+    opacity: 0.75;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    opacity: 0.75;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: filter 0.3s ease;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a img {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    height: 24px;
+    width: 24px;
+}
+
+/* Sidebar styles */
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 1), rgb(1, 15, 1));
+    padding: 30px 20px;
+    transition: right 0.5s ease;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+}
+
+#sidebar.active {
+    right: 0;
+}
+
+#sidebar a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: filter 0.3s ease;
+}
+
+#closeBtn {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    transition: filter 0.3s ease;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px 50px 50px;
+    gap: 50px;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero-text h1 {
+    font-size: clamp(36px, 8vw, 100px);
+    opacity: 0.75;
+    font-weight: 600;
+}
+
+.hero-text p {
+    font-size: clamp(14px, 2.5vw, 20px);
+    opacity: 0.75;
+    font-weight: 500;
+    max-width: 70%;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: clamp(10px, 3vw, 20px);
+}
+
+.btn-explore {
+    font-size: clamp(14px, 3vw, 28px);
+    height: clamp(38px, 6vw, 64px);
+    padding: 0 clamp(30px, 6vw, 50px);
+    border-radius: 12px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-explore:hover {
+    background: white;
+    color: rgb(3, 46, 3);
+}
+
+.demo-icon .icon-bg {
+    width: clamp(38px, 6vw, 64px);
+    height: clamp(38px, 6vw, 64px);
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+
+.cta p {
+    font-size: clamp(14px, 2.5vw, 20px);
+    font-weight: 400;
+    margin: 0;
+}
+
+.review-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 409px;
+    height: 237px;
+    border-radius: 45px;
+    padding: 35px;
+    margin-top: 300px;
+    text-align: left;
+    color: white;
+    opacity: 0.75;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review-meta {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.review-name {
+    font-weight: 700;
+    font-size: 18px;
+    opacity: 1;
+    margin-bottom: 5px;
+}
+
+.star-rating {
+    display: flex;
+    gap: 5px;
+}
+
+.star-rating img {
+    width: 15px;
+    height: 15px;
+}
+
+.review-text {
+    font-size: 15px;
+}
+
+/*Product Card */
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.product-card {
+    position: relative;
+    width: 512px;
+    height: 644px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 77px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.product-img {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.product-label {
+    font-size: 23px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.arrow-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.product-name {
+    font-size: 38px;
+    margin: 0;
+}
+
+.arrow-row img {
+    cursor: pointer;
+}
+
+.btn-buy {
+    font-size: 28px;
+    height: 64px;
+    padding: 0 50px;
+    border-radius: 12px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    opacity: 0.75;
+    margin: 20px 15px 90px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-buy:hover {
+    background: white;
+    color: rgb(3, 46, 3);
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 514px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .hero-left {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .hero-text p {
+        max-width: 100%;
+    }
+
+    .review-box {
+        width: 281px;
+        height: 162px;
+        border-radius: 28px;
+        padding-left: 35px;
+        margin-top: 75px;
+    }
+
+    .review-text {
+        font-size: 11px;
+        padding-bottom: 10px;
+    }
+
+    .review-avatar {
+        width: 41px;
+        height: 41px;
+        margin-top: 10px;
+    }
+
+    .review-name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 410px) {
+    .brand {
+        padding-left: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .cta {
+        padding-left: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero {
+        padding-inline: 25px;
+    }
+
+    .hero-left,
+    .hero-right {
+        padding-inline: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 312px;
+        height: 459px;
+        margin-top: 50px;
+    }
+
+    .hero-right {
+        padding: 0 5px;
+        margin-top: 200px;
+    }
+
+    .product-label {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .product-name {
+        font-size: 23px;
+    }
+
+    .btn-buy {
+        font-size: 16px;
+        height: 34px;
+        width: 109px;
+        margin-inline: auto;
+        padding: 0;
+    }
+
+    .arrow-row {
+        justify-content: center;
+        margin-bottom: 15px;
+        gap: 25px;
+    }
+
+    .arrow-row p {
+        padding-left: 30px;
+    }
+}
