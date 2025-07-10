@@ -42,7 +42,7 @@ header{
   height: 26px;
   object-fit: contain; 
 }
-main{
+.main-frst-sctn{
     display: flex;
     flex-direction: row;
 }
@@ -158,6 +158,145 @@ main{
   opacity: 75%;
   padding: 35px;
 }
+.hdng{
+    text-align: center;
+}
+.hdng p {
+  position: relative; /* important for pseudo-elements */
+  display: inline-block;
+  color: #FFFFFF;
+  opacity: 75%;
+  font-size: 50px;
+  padding: 10px 20px;
+}
+
+.hdng p::before,
+.hdng p::after { /*fake child elements*/
+  content: ""; /*pseudo elementlerin contenti olmadigi ucun onlara content verilir bosluq da olsa*/
+  position: absolute;
+  width: 40px; 
+  height: 40px; 
+  border: 3px solid #55B000;
+  border-radius: 10px;
+}
+.hdng p::before {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+.hdng p::after {
+  bottom: 0;
+  left: 0;
+  border-top: none;
+  border-right: none;
+}
+.cntr-top{
+     margin: 0 auto; /* horizontally center */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #FFFFFF0D;
+    height: 450px;
+    width: 1620px;
+    border: 2px solid #646464;
+    border-radius: 20px;
+
+}
+.cntr-tp-prgrph{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    opacity: 75%;
+    gap: 20px;
+    padding-top: 50px;
+    
+}
+.cntr-tp-prgrph h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    padding: 0px;
+    margin: 0px;
+}
+.cntr-tp-prgrph p{
+    font-size: 20px;
+    width: 732px;
+    margin: 0px;
+}
+.cntr-tp-prgrph span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+}
+.button{
+    display: flex;
+}
+.frst{
+    margin-top: -200px;
+    z-index: 2;
+    width:601px;
+    height: 722px;
+}
+.cntr-bttm-prgrph img{
+    width: 34px;
+    height: 34px;
+    border: 2px solid #8d8c8c;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cntr-bttm{
+     margin: 0 auto; /* horizontally center */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #FFFFFF0D;
+    height: 450px;
+    width: 1620px;
+    border: 2px solid #646464;
+    border-radius: 20px;
+
+}
+.cntr-bttm-prgrph{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    opacity: 75%;
+    gap: 20px;
+    padding-top: 50px;
+    
+}
+.cntr-bttm-prgrph h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    padding: 0px;
+    margin: 0px;
+}
+.cntr-bttm-prgrph p{
+    font-size: 20px;
+    width: 732px;
+    margin: 0px;
+}
+.cntr-bttm-prgrph span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+}
+.button{
+    display: flex;
+}
+.scnd{
+    margin-top: -200px;
+    z-index: 2;
+    width:732px;
+    height: 732px;
+}
+.cntr-bttm-prgrph img{
+    width: 34px;
+    height: 34px;
+    border: 2px solid #8d8c8c;
+    border-radius: 10px;
+    padding: 10px;
+}
 @media (max-width: 400px){
 .header{
     display:flex;
@@ -179,7 +318,7 @@ main{
 .hdr-lft, .hdr-icns {
     flex-shrink: 1; 
 }
-main{
+.main-frst-sctn{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -270,6 +409,154 @@ main{
 .nvgtn-br{
     display: none;
 }
+.hdng {
+    display: block;
+    margin: 150px auto; /* center it with spacing */
+    text-align: center; /* ensures text is centered */
+}
+.hdng p {
+  position: relative; /* important for pseudo-elements */
+  display: inline-block;
+  color: #FFFFFF;
+  opacity: 75%;
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+.hdng p::before,
+.hdng p::after { /*fake child elements*/
+  content: ""; /*pseudo elementlerin contenti olmadigi ucun onlara content verilir bosluq da olsa*/
+  position: absolute;
+  width: 40px; 
+  height: 40px; 
+  border: 3px solid #55B000;
+  border-radius: 10px;
+}
+.hdng p::before {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+.hdng p::after {
+  bottom: 0;
+  left: 0;
+  border-top: none;
+  border-right: none;
+}
+.our-trnd-plnts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+.cntr-top{
+    margin: 0 auto; /* horizontally center */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #FFFFFF0D;
+    height: 450px;
+    width: 450px;
+    border: 2px solid #646464;
+    border-radius: 20px;
+
+
+}
+.cntr-tp-prgrph{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    opacity: 75%;
+    gap: 20px;
+    padding-top: 50px;
+    
+}
+.cntr-tp-prgrph h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    padding: 0px;
+    margin: 0px;
+}
+.cntr-tp-prgrph p{
+    font-size: 10px;
+    width: 284px;
+    margin: 0px;
+}
+.cntr-tp-prgrph span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+}
+.button{
+    display: flex;
+}
+.frst{
+    margin-top: -200px;
+    z-index: 2;
+    width:601px;
+    height: 740px;
+}
+.cntr-bttm-prgrph img{
+    width: 34px;
+    height: 34px;
+    border: 2px solid #8d8c8c;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cntr-bttm{
+     margin: 0 auto; /* horizontally center */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #FFFFFF0D;
+    height: 450px;
+    width: 1620px;
+    border: 2px solid #646464;
+    border-radius: 20px;
+
+}
+.cntr-bttm-prgrph{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    opacity: 75%;
+    gap: 20px;
+    padding-top: 50px;
+    
+}
+.cntr-bttm-prgrph h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+.cntr-bttm-prgrph p{
+    font-size: 20px;
+    width: 732px;
+    margin: 0px;
+}
+.cntr-bttm-prgrph span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.button{
+    display: flex;
+}
+.scnd{
+    margin-top: -200px;
+    z-index: 2;
+    width:732px;
+    height: 732px;
+}
+.cntr-bttm-prgrph img{
+    width: 34px;
+    height: 34px;
+    border: 2px solid #8d8c8c;
+    border-radius: 10px;
+    padding: 10px;
+}
 }
 @media (min-width: 400px) and (max-width: 1120px){
 .nvgtn-br{
@@ -298,7 +585,7 @@ main{
   height: 26px;
   object-fit: contain; 
 }
-main{
+.main-frst-sctn{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -438,7 +725,7 @@ main{
         font-weight: 900;
         color: #FFFFFF;
     }
-    main {
+    .main-frst-sctn {
       display: flex;
       flex-direction: row; 
       text-align: left;    
@@ -480,7 +767,7 @@ main{
    }
     }
 @media (min-width: 1728px) {
-  main {
+  .main-frst-sctn {
     justify-content: space-evenly;
     margin-top: 50px;
   }
