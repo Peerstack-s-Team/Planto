@@ -138,3 +138,242 @@ header {
     margin-left: auto;
     margin-top: 8px;
 }
+
+/* =============== HEADING SECTION =============== */
+
+
+.heading-section {
+    display: flex;
+    gap: 11.5vw;
+    align-items: center;
+}
+
+.heading-text {
+    font-size: 1rem;
+}
+
+.heading-left {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 11.8em;
+}
+
+.heading-text p {
+    font-size: 2.8em;
+}
+
+.btn-cnr {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.explore-btn {
+    position: relative;
+    font-size: 2.8em;
+    padding: 0.54em 2.15em;
+    border: 2px solid white;
+    border-radius: 0.43em;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    color: black;
+}
+
+.explore-btn::after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.explore-btn:hover::after {
+    opacity: 1;
+    width: 500%;
+    height: 500%;
+}
+
+.demo-btn {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 2.8em;
+}
+
+.demo-btn>* {
+    transition: all .3s ease;
+}
+
+.demo-btn:hover>* {
+    border-color: rgb(160, 160, 160);
+    color: rgb(160, 160, 160);
+}
+
+.play-icon {
+    font-size: 1em;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 0.75em;
+}
+
+.heading-comment-cnr {
+    margin-top: 18rem;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    padding: 4rem;
+    background-color: rgb(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgb(255, 255, 255, 0.25);
+    border-radius: 4.5rem;
+    width: min(100%, 535px)
+}
+
+.heading-comment-cnr .author-cnr {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.heading-comment-cnr .profile-pic {
+    height: 6.4rem;
+}
+
+.heading-comment-cnr .author-name {
+    font-size: 2.2rem;
+}
+
+.heading-comment-cnr .star {
+    color: #FFF84E;
+    font-size: 1.5rem;
+}
+
+.heading-comment-cnr p {
+    font-size: 1.8rem;
+}
+
+.curvy-box {
+    font-size: 10px;
+    position: relative;
+    padding: 340px 50px 40px 70px;
+    width: 510px;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    box-shadow: 0 9px 18.4px rgba(0, 0, 0, 0.25);
+}
+
+.curvy-box .overlay {
+    position: absolute;
+    inset: 0;
+    border-radius: 80px;
+    clip-path: path("M 0 0 H 80 Q 255 18 430 0 H 510 V 1000 H 0 Z");
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255, 0.08);
+    z-index: -1;
+}
+
+.slideshow-heading-cnr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading-slideshow-cnr img {
+    display: none;
+}
+
+.curvy-box img {
+    height: 46em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25%;
+    animation: slideInBottom 0.7s ease-in;
+}
+
+@keyframes slideInBottom {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 2%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+.curvy-box .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.curvy-box .plant-category {
+    font-size: 2.4em;
+    animation: slideInRight 0.5s ease-in;
+}
+
+.curvy-box .plant-name {
+    font-size: 3.8em;
+    animation: slideInRight 0.5s ease-in;
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(5%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.curvy-box .right-arrow-icon {
+    font-size: 3em;
+    cursor: pointer;
+    transition: transform .1s ease;
+}
+
+.curvy-box .right-arrow-icon:hover {
+    transform: scale(1.2);
+}
+
+.header-ss-pagination-cnr {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 3.6em;
+}
+
+.pagination-dot {
+    display: block;
+    height: 0.6em;
+    width: 0.6em;
+    background-color: white;
+    border-radius: 50%;
+    transition: width 0.7s ease, border-radius 0.3s ease;
+}

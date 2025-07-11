@@ -1,67 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planto</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
 
-
-<body>
+  <body>
     <div class="plant-bg"></div>
 
     <header>
-        <div class="logo-cnr">
-            <img src="./img/logo.png" alt="logo" class="logo">
-            <div class="logo-text">Planto.</div>
+      <div class="logo-cnr">
+        <img src="./img/logo.png" alt="logo" class="logo" />
+        <div class="logo-text">Planto.</div>
+      </div>
+
+      <nav>
+        <ul class="nav-link-list">
+          <li>
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <span>Plants Type</span>
+              <i class="fa-solid fa-caret-down down-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">More</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <div class="header-basket-cnr">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <div class="added-items-count"></div>
         </div>
-    
-        <nav>
-            <ul class="nav-link-list">
-                <li>
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Plants Type</span>
-                        <i class="fa-solid fa-caret-down down-icon"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">More</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    
-    
-        <div class="header-icons">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <div class="header-basket-cnr">
-                <i class="fa-solid fa-basket-shopping"></i>
-                <div class="added-items-count"></div>
-            </div>
-    
-            <div class="menu-icon">
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-            </div>
+
+        <div class="menu-icon">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
         </div>
+      </div>
     </header>
 
+    <section class="heading-section">
+      <div class="heading-left">
+        <div class="heading-text">
+          <h1>Breath Natureal</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
 
+          <div class="btn-cnr">
+            <a href="#" class="explore-btn">Explore</a>
+            <a href="#" class="demo-btn">
+              <i class="fa-solid fa-play play-icon"></i>
+              <span>Live Demo...</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="heading-comment-cnr">
+          <div class="author-cnr">
+            <img src="./img/alena-pf.png" alt="comment" class="profile-pic" />
+            <div class="author-name">
+              Alena Patel
+              <div class="stars-cnr">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half star"></i>
+              </div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt...
+          </p>
+        </div>
+      </div>
+      <div class="heading-right">
+        <div class="curvy-box heading-slideshow-cnr">
+          <div class="overlay"></div>
+          <div class="slideshow-heading-cnr">
+            <div class="left">
+              <div class="header-ss-image-cnr">
+                <img src="./img/plant-1.png" alt="plant-1" />
+                <img src="./img/plant-2.png" alt="plant-2" />
+                <img src="./img/plant-3.png" alt="plant-3" />
+              </div>
+              <div class="plant-category-cnr">
+                <p class="plant-category">Trend House Plant</p>
+                <p class="plant-category">Modern Leafy Gem</p>
+                <p class="plant-category">Arid Beauty</p>
+              </div>
+
+              <div class="plant-name-cnr">
+                <p class="plant-name">Calathea plant</p>
+                <p class="plant-name">Calathea plant</p>
+                <p class="plant-name">Calathea plant</p>
+              </div>
+              <a href="#" class="explore-btn">Explore All</a>
+            </div>
+            <i class="fa-solid fa-angle-right right-arrow-icon"></i>
+          </div>
+
+          <div class="header-ss-pagination-cnr">
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
