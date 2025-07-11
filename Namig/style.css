@@ -23,3 +23,7 @@ button {
     border: none;
     cursor: pointer;
 }
+
+body {
+    background-color: #1B2316;
+}
