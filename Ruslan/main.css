@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.backImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 2/3 ;
+    background-image: url('pictures/background.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+nav ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+nav ul li {
+    font-family: "Inter", sans-serif;
+    padding: 30px;
+    color: #c4c4c4;
+    font-size:24px;
+}
+
+.logoplanto {
+    padding: 20px;
+    font-weight: bolder;
+    color: #c4c4c4;
+    font-size: 32px;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 57px;
+}
+
+#search {
+    background-color: none;
+}
+
+.buttons button {
+    border: none;
+    margin-right: 40px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.buttons button i {
+    font-size: 24px;
+    color: white;
+}
+
+.body {
+    display: flex;
+}
+
+#motto {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: #c4c4c4;
+    margin-top: 200px;
+    margin-left: 57px;
+    font-size: 118px;
+}
+
+#lorem {
+    font-family: "Inter", sans-serif;
+    width: 893px;
+    color: #c4c4c4;
+    margin-left: 57px;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.explore {
+    margin-left: 57px;
+    color:  #c4c4c4;;
+    border-radius: 10px;
+    border-color: white;
+    background: none;
+    font-family: "Inter", sans-serif;
+    font-size:28px;
+    width: 217px;
+    height: 64px;
+    
+}
+
+.demo {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    font-size:20px;
+    width: 196px;
+    height: 64px;
+    color:  #c4c4c4;;
+    border: none;
+    background: none;
+    margin-left: 35px;   
+    align-items: center;
+}
+
+.rightPlant {
+   width: 510px;
+   height: 644px;
+   position: relative;
+}
+
+.rightimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 490px;
+    height: 520px;
+}
+
+.box {
+   position: absolute;
+   background-color: #FFFFFF0D; 
+   z-index: -1;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(25px);
+   z-index: -1;
+   border-radius: 80px;
+   clip-path: path("M 0 0 H 80 Q 255 20 430 0 H 510 V 1000 H 0 Z") ;
+}
