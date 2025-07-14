@@ -49,7 +49,6 @@ headerSSNextButton.addEventListener("click", () => {
     resetSlideshowTimer()
 })
 
-
 // Basket related logic
 
 const addedItemsContainer = document.querySelector(".added-items-count");
@@ -66,17 +65,44 @@ basketButtons.forEach((button) => {
     });
 });
 
-
+// Best O2 related logic
 
 const bestO2PaginationDots = document.querySelectorAll(".bo2-pagination-cnr .pagination-dot");
 const prevButton = document.querySelector(".prev-btn")
 const nextButton = document.querySelector(".next-btn")
 const plantNumberCnr = document.querySelector(".plant-number-cnr")
 const plantImages = document.querySelectorAll(".bo2-main img")
-console.log(plantImages)
+
 let currentPlantIndex = 0;
 
 function generatePlantNumber(currentPlantIndex) {
     // padstart function adds "0" before number until it reaches two digit length
     plantNumberCnr.textContent = `${String(currentPlantIndex + 1).padStart(2, "0")}` + "/04"
 }
+
+prevButton.addEventListener('click', () => {
+    currentPlantIndex = currentPlantIndex === 0 ? 3 : currentPlantIndex - 1
+    changePlant(currentPlantIndex)
+    generatePlantNumber(currentPlantIndex)
+})
+
+nextButton.addEventListener('click', () => {
+    currentPlantIndex = currentPlantIndex === 3 ? 0 : currentPlantIndex + 1
+    changePlant(currentPlantIndex)
+    generatePlantNumber(currentPlantIndex)
+})
+
+function changePlant(currentPlantIndex) {
+
+    plantImages.forEach((image, i) => {
+        image.style.display = i === currentPlantIndex ? "block" : "none"
+    })
+
+    bestO2PaginationDots.forEach((dot, i) => {
+        dot.style.width = i === currentPlantIndex ? "3.1rem" : "1.1rem";
+        dot.style.borderRadius = i === currentPlantIndex ? "1000px" : "50%";
+    })
+}
+
+changePlant(currentPlantIndex)
+generatePlantNumber(currentPlantIndex)
