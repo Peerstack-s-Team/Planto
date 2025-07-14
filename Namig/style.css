@@ -579,6 +579,58 @@ h1 {
   font-size: 3.8em;
 }
 
+/* =============== CUSTOMER REVIEW SECTION =============== */
+
+.customer-review-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18.2rem;
+  align-items: center;
+}
+
+.cr-items-cnr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.3rem;
+  row-gap: 8em;
+}
+
+.cr-item {
+  padding: 91px 51px 95px 58px;
+  gap: 6.1em;
+  margin-top: 0;
+}
+
+.cr-item .author-cnr {
+  display: flex;
+  gap: 3.8em;
+  align-items: center;
+  width: 100%;
+}
+
+.cr-item .profile-pic {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  height: 8.8em;
+}
+
+.cr-item .author-name p {
+  font-size: 3.8em;
+  margin-bottom: 5px;
+}
+
+.cr-item .star {
+  color: #fff84e;
+  font-size: 1.9em;
+}
+
+.cr-item p {
+  font-size: 2.4em;
+}
+
 @media (max-width: 1440px) {
   .heading-section {
     gap: 10vw;
@@ -672,6 +724,15 @@ h1 {
 
   .tss-items-cnr {
     row-gap: 50px;
+  }
+
+  .cr-item {
+    padding: 70px 40px 60px 40px;
+    gap: 3em;
+  }
+
+  .cr-item .author-cnr {
+    gap: 3em;
   }
 }
 
