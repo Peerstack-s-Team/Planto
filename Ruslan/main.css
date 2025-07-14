@@ -68,6 +68,11 @@ nav ul li {
     display: flex;
 }
 
+section {
+    display: flex;
+    justify-content: flex-end;
+}
+
 #motto {
     font-family: "Inter", sans-serif;
     font-weight: bold;
@@ -116,14 +121,16 @@ nav ul li {
    width: 510px;
    height: 644px;
    position: relative;
+   left: 380px;
+   top: 100px;
 }
 
 .rightimg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 490px;
-    height: 520px;
+    width: 550px;
+    height: 600px;
 }
 
 .box {
