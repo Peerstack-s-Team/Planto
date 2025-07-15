@@ -192,7 +192,7 @@ header{
   border-right: none;
 }
 .cntr-top{
-    margin: 0 auto; /* horizontally center */
+     margin: 0 auto; /* horizontally center */
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -201,7 +201,13 @@ header{
     width: 1620px;
     border: 2px solid #646464;
     border-radius: 20px;
-
+}
+.cntr-tp-prgrph img{
+    width: 34px;
+    height: 34px;
+    border: 2px solid #8d8c8c;
+    border-radius: 10px;
+    padding: 10px;
 }
 .cntr-tp-prgrph{
     display: flex;
@@ -237,13 +243,6 @@ header{
     width:601px;
     height: 722px;
 }
-.cntr-tp-prgrph img{
-    width: 34px;
-    height: 34px;
-    border: 2px solid #8d8c8c;
-    border-radius: 10px;
-    padding: 10px;
-}
 .cntr-bttm-prgrph img{
     width: 34px;
     height: 34px;
@@ -252,7 +251,7 @@ header{
     padding: 10px;
 }
 .cntr-bttm{
-    margin: 0 auto; /* horizontally center */
+     margin: 0 auto; /* horizontally center */
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -297,6 +296,13 @@ header{
     width:732px;
     height: 732px;
 }
+.cntr-bttm-prgrph img{
+    width: 34px;
+    height: 34px;
+    border: 2px solid #8d8c8c;
+    border-radius: 10px;
+    padding: 10px;
+}
 @media (max-width: 400px){
 .header{
     display:flex;
@@ -318,16 +324,10 @@ header{
 .hdr-lft, .hdr-icns {
     flex-shrink: 1; 
 }
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 100px; /* creates vertical gap between sections */
-}
 .main-frst-sctn{
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
 }
 .main-rght img{
     position: relative;
@@ -336,7 +336,7 @@ main {
     height: 550px;
 }
 .btn-sctn img{
-  height: 44px;
+  height: 54px;
   width: auto;
 }
 .main-rght button{
@@ -350,20 +350,22 @@ main {
     font-size: 20px;
 }
 .primary-btn{
-    font-size: 10px;
-    border: 2px solid white;
+    background-color: transparent;
     color: #FFFFFF;
-    width: 80px;
-    height: 24px;
-    display: flex;              
-    justify-content: center;    
-    align-items: center;        
-    text-align: center; 
+    font-size: 20px;
+    text-align: center;
+    opacity: 75%;
+    border-color: #FFFFFF;
+    width: 140px;
+    height: 54px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 20px;
 }
 .mains-lft{
     display: flex;
     flex-direction:column;
-    gap: 40px;
 }
 .main-prgrph h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -371,21 +373,34 @@ main {
     font-size: 25px;
     color: #FFFFFF;
     opacity: 75%;
-    margin: 30px auto 0px 50px;
+    margin: 70px auto 0px 50px;
 }
 .main-prgrph p{
-    display: none;
+    color: #FFFFFF;
+    opacity: 75%;
+    width: 376px;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0px auto 0px 50px;
 }
 .main-rght img{
     position: relative;
     margin: -40px ;
     z-index: 2;
-    width: 460px;
-    height: 460px;
+    width: 560px;
 }
 .cntnr-rght {
+  display: flex;
+  flex-direction: row;
+  align-items: center;       
+  justify-content:space-around;
+  width: 100%;
+  position: absolute;
+  background-color: #FFFFFF0D;
+  border-radius: 77px;
   width: 350px;
   height: 300px;
+  padding: 300px 40px 0px 0px;
 }
 .cntnr-rght img{
     width: 20px;
@@ -440,66 +455,111 @@ main {
     flex-direction: column;
     gap: 30px; 
 }
-.cntr-top, .cntr-bttm{
+.cntr-top{
+    margin: 0 auto; /* horizontally center */
     display: flex;
     flex-direction: column;
-    width: 340px;
-    height: 400px;
-    text-align: center;
-}
-.cntr-bttm h3, .cntr-top h3 {
-    font-size: 20px;
-    font-weight: 600;
-    font-style: bold;
-}
-.cntr-bttm p, .cntr-top p{
-    width: 300px;
-    padding: 5px;
-    font-size: 10px;
-    font-weight: 600;
-}
-.cntr-bttm span, .cntr-top span{
-    font-size: 17px;
-}
-.cntr-bttm-prgrph img, .cntr-tp-prgrph img{
-    height: 10px;
-    width: 10px;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 5px;
-}
-.button{
-    margin-bottom: 20px;
-}
-.frst, .scnd{
-    margin: 0px auto;
-    width: 270px;
-    height: 220px;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #FFFFFF0D;
+    height: 450px;
+    width: 450px;
+    border: 2px solid #646464;
+    border-radius: 20px;
 }
 .cntr-tp-prgrph{
-    gap: 0px;
-    height: 140px;
-    padding-top: 0px;
-    margin-top: 0px;
-}
-.cntr-bttm-prgrph img{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    opacity: 75%;
+    gap: 20px;
+    padding-top: 50px;
     
 }
-.cntr-bttm{
+.cntr-tp-prgrph h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    padding: 0px;
+    margin: 0px;
 }
-
-.cntr-bttm-prgrph h3{
+.cntr-tp-prgrph p{
+    font-size: 10px;
+    width: 284px;
+    margin: 0px;
 }
-.cntr-bttm-prgrph p{
-}
-.cntr-bttm-prgrph span{
+.cntr-tp-prgrph span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 38px;
 }
 .button{
+    display: flex;
 }
-.scnd{
-   
+.frst{
+    margin-top: -200px;
+    z-index: 2;
+    width:601px;
+    height: 740px;
 }
 .cntr-bttm-prgrph img{
+    width: 34px;
+    height: 34px;
+    border: 2px solid #8d8c8c;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cntr-bttm{
+     margin: 0 auto; /* horizontally center */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #FFFFFF0D;
+    height: 450px;
+    width: 1620px;
+    border: 2px solid #646464;
+    border-radius: 20px;
+
+}
+.cntr-bttm-prgrph{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    opacity: 75%;
+    gap: 20px;
+    padding-top: 50px;
+    
+}
+.cntr-bttm-prgrph h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+.cntr-bttm-prgrph p{
+    font-size: 20px;
+    width: 732px;
+    margin: 0px;
+}
+.cntr-bttm-prgrph span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.button{
+    display: flex;
+}
+.scnd{
+    margin-top: -200px;
+    z-index: 2;
+    width:732px;
+    height: 732px;
+}
+.cntr-bttm-prgrph img{
+    width: 34px;
+    height: 34px;
+    border: 2px solid #8d8c8c;
+    border-radius: 10px;
+    padding: 10px;
 }
 }
 @media (min-width: 400px) and (max-width: 1120px){
@@ -740,18 +800,5 @@ main {
     padding: 300px 40px 0 0;
     margin-top: 50px;
   }
-
-    .cntr-top {
-        width: 1450px ;
-    }
-    .cntr-bttm {
-        width: 1450px ;
-    }
-
-    .scnd {
-        width:601px;
-        height: 690px;
-    }
-
 }
 
