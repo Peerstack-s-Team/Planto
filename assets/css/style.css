@@ -447,6 +447,9 @@ main {
     height: 400px;
     text-align: center;
 }
+.cntr-bttm{
+    flex-direction: column-reverse;
+}
 .cntr-bttm h3, .cntr-top h3 {
     font-size: 20px;
     font-weight: 600;
@@ -471,10 +474,15 @@ main {
 .button{
     margin-bottom: 20px;
 }
-.frst, .scnd{
-    margin: 0px auto;
+.frst{
+    margin: -120px 0px 0px 35px;
     width: 270px;
-    height: 220px;
+    height: 240px;
+}
+.scnd{
+    margin: -120px 0px 0px 85px;
+    width: 180px;
+    height: 250px;
 }
 .cntr-tp-prgrph{
     gap: 0px;
@@ -482,8 +490,14 @@ main {
     padding-top: 0px;
     margin-top: 0px;
 }
-.cntr-bttm-prgrph img{
-    
+.our-trnd-plnts .hdng {
+    margin-bottom: 0px; 
+}
+.our-trnd-plnts .cntr-top {
+    margin-bottom: 0px; 
+}
+.cntr-bttm-prgrph {
+    gap: 0px;
 }
 .cntr-bttm{
 }
@@ -740,17 +754,22 @@ main {
     padding: 300px 40px 0 0;
     margin-top: 50px;
   }
-
-    .cntr-top {
-        width: 1450px ;
+    .cntr-top, .cntr-bttm {
+        width: 1850px ;
     }
-    .cntr-bttm {
-        width: 1450px ;
+    .our-trnd-plnts .hdng {
+    margin-bottom: 80px; 
     }
-
+    .our-trnd-plnts .cntr-top {
+    margin-bottom: 150px; 
+    }
     .scnd {
-        width:601px;
-        height: 690px;
+        width:450px;
+        height: 630px;
+    }
+    .frst{
+        width:620px;
+        height: 590px;
     }
 
 }
