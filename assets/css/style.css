@@ -16,6 +16,7 @@ header{
     gap: 30px;
     width: 545px;
     opacity: 75%;
+    font-size: 25px;
 }
 .nvgtn-br a{
     color: #FFFFFF;
@@ -25,23 +26,25 @@ header{
     display: flex;
 }
 .hdr-lft img{
-    height: 130px;
+    height: 150px;
+    width: 150px;
 }
 .hdr-lft span{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: -30px;
     font-weight: 900;
-    font-size: 28px;
+    font-size: 36px;
     color: #FFFFFF;
 }
 .hdr-icns{
     display: flex;
     gap: 20px;
     padding-right: 20px;
+
 }
 .hdr-icns img {
-  width: 20px;
-  height: 26px;
+  width: 30px;
+  height: 36px;
   object-fit: contain; 
 }
 .main-frst-sctn{
@@ -786,7 +789,7 @@ main {
 }
 @media (min-width: 1728px) {
   .main-frst-sctn {
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 50px;
   }
 
@@ -831,4 +834,16 @@ main {
     }
 
 }
-
+@media (min-width: 3600px){
+ .main-frst-sctn {
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+.cntr-top, .cntr-bttm {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 2500px ;
+    }
+}
