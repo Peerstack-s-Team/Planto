@@ -1,6 +1,8 @@
 body{
     background-image: url('../images/backgroundimg.jpg') ;
     background-size: cover;
+    margin: 0px;
+    padding: 0px;
 }
 header{
     display:flex;
@@ -298,6 +300,11 @@ header{
     height: 732px;
 }
 @media (max-width: 400px){
+body{
+    background-image: url('../images/backgroundimg.jpg') ;
+    background-size: cover;
+    margin: 20px;
+}
 .header{
     display:flex;
     justify-content: space-between;
@@ -409,6 +416,7 @@ main {
   position: relative; /* important for pseudo-elements */
   display: inline-block;
   color: #FFFFFF;
+  width: 200px;
   opacity: 75%;
   font-size: 24px;
   padding: 10px 20px;
@@ -498,22 +506,6 @@ main {
 }
 .cntr-bttm-prgrph {
     gap: 0px;
-}
-.cntr-bttm{
-}
-
-.cntr-bttm-prgrph h3{
-}
-.cntr-bttm-prgrph p{
-}
-.cntr-bttm-prgrph span{
-}
-.button{
-}
-.scnd{
-   
-}
-.cntr-bttm-prgrph img{
 }
 }
 @media (min-width: 400px) and (max-width: 1120px){
@@ -625,6 +617,9 @@ main {
   flex-direction: column;
   gap: 10px;
 }
+.info-text p{
+    height: 50px;
+}
 .main-rght p{
     font-weight: 400;
     height: 24px;
@@ -653,6 +648,44 @@ main {
 .main-prgrph-sctn img{
     width: 20px;
     height:20px;
+}
+.our-trnd-plnts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    gap: 100px;
+    
+ }
+.cntr-top, .cntr-bttm  { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    height: 850px;
+}
+
+.frst { 
+   position: relative;
+   margin-top: -150px ;
+   height: 530px;
+   width: 530px; 
+}
+
+.cntr-tp-prgrph p, .cntr-bttm-prgrph p{
+    font-size: 20px;
+    width: 582px;
+    margin: 0px;
+ }
+.cntr-bttm { 
+    display: flex;
+    flex-direction: column-reverse;
+}
+.scnd {
+   position: relative;
+   margin-top: -150px ;
+   height: 530px;
+   width: 420px;  
 }
 }
 @media (min-width: 1120px) and (max-width: 1727px){
@@ -723,7 +756,34 @@ main {
    .cmmnt-sctn{
     margin-left: 30px;
    }
+   .our-trnd-plnts { 
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+   }
+    .hdng { 
+        width: 100%;
+        height: 110px;
     }
+    .cntr-top, .cntr-bttm {
+        width: 1150px;
+    }
+    .frst {
+        width: 511px;
+        height: 450px;
+        margin-top: 1px;
+    }
+    .scnd{
+        width: 351px;
+        height: 450px;
+        margin-top: 1px;
+    }
+    .cntr-tp-prgrph p, .cntr-bttm-prgrph p{ 
+        width: 450px;
+        height: 50px;
+        overflow:scroll;
+    }
+}
 @media (min-width: 1728px) {
   .main-frst-sctn {
     justify-content: space-evenly;
@@ -744,18 +804,16 @@ main {
     max-width: 600px;
     margin: 20px 0;
   }
-
   .main-rght img {
     max-width: 100%;
   }
-
   .cntnr-rght {
     justify-content: space-around;
     padding: 300px 40px 0 0;
     margin-top: 50px;
   }
     .cntr-top, .cntr-bttm {
-        width: 1850px ;
+        width: 1700px ;
     }
     .our-trnd-plnts .hdng {
     margin-bottom: 80px; 
