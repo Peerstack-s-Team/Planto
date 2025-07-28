@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <picture>
+        <img src="../images/background.png" alt="bg image">
+    </picture>
+
+    <nav>
+        <div id="logo">
+            <img style="width: 30px; height: 30px;" src="../images/plant 1.png" alt="Planto logo">
+            <h1>Planto.</h1>
+        </div>
+
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Plant Type &#11206;</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <img style="width: 20px; height: 20px;" src="../images/search-icon.png" alt="search">
+            <img style="width: 20px; height: 20px;" src="../images/bag 3.png" alt="cart">
+            <img style="width: 20px; height: 20px;" src="../images/Group 3.png" alt="menu">
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div class="header">
+                <div>
+                    <h1>Breath Natureal</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua.</p>
+                </div>
+                <div class="buttons">
+                    <button href="#">Explore</button>
+                    <a><img style="width: 42px; height: 42px;" src="../images/Ellipse 1.png" alt="">Live
+                        Demo...</a>
+                </div>
+            </div>
+
+            <div class="seller">
+                <div class="person">
+                    <img style="width: 55px; height: 55px;" src="../images/unsplash_3TLl_97HNJo.png" alt="">
+                    <div class="name">
+                        <h3>Alena Patel</h3>
+                        <div class="rates">
+                            <img src="../images/Star 1.png" alt="star">
+                            <img src="../images/Star 1.png" alt="star">
+                            <img src="../images/Star 1.png" alt="star">
+                            <img src="../images/Star 1.png" alt="star">
+                            <img src="../images/Star 5.png" alt="star">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-img"> <img id="trend"
+                        src="../images/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png" alt="product"
+                        width="250px" height="250px"></div>
+                <div class="product-info">
+                    <a id="angle-left" href=""><i class="fa-solid fa-angle-left"></i></a>
+                    <div>
+                        <h5>Trendy House Plant</h5>
+                        <h2>Calathea plant</h2>
+                    </div>
+                    <a id="angle-right" onClick=""><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+
+                <button href="#">Buy know</button>
+
+                <div class="pagination">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <script>
+                    const images = [
+                        "../images/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png",
+                        "../images/trendyplant1.png",
+                        "../images/trendyplant2.png"
+                    ];
+
+                    const image = document.getElementById('trend');
+                    const dots = document.querySelectorAll('.dot');
+                    const rightArrow = document.getElementById('angle-right');
+
+                    let current = 0;
+
+                    rightArrow.addEventListener('click', () => {
+                        dots[current].classList.remove('active');
+
+                        current = (current + 1) % dots.length;
+                        dots[current].classList.add('active');
+
+                        image.style.opacity = 0;
+
+                        setTimeout(() => {
+                            image.src = images[current];
+                            image.style.opacity = 1;
+                        }, 500);
+                    });
+                </script>
+
+            </div>
+
+        </header>
+        
+        <div class="section-title">
+            <span class="corner top-right"></span>
+            <h2>Our Trendy plants</h2>
+            <span class="corner bottom-left"></span>
+        </div>
+    </main>
+</body>
+
+</html>
