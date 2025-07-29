@@ -400,6 +400,82 @@ main {
   border: #f8f0f00d solid 2px;
   margin: 20px;
 }
+.customer-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.hdng-3 {
+  text-align: center;
+}
+.hdng-3 p {
+  position: relative; /* important for pseudo-elements */
+  display: inline-block;
+  color: #ffffff;
+  opacity: 75%;
+  font-size: 50px;
+  padding: 10px 20px;
+}
+
+.hdng-3 p::before,
+.hdng-3 p::after {
+  /*fake child elements*/
+  content: ""; /*pseudo elementlerin contenti olmadigi ucun onlara content verilir bosluq da olsa*/
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #55b000;
+  border-radius: 10px;
+}
+.hdng-3 p::before {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+.hdng-3 p::after {
+  bottom: 0;
+  left: 0;
+  border-top: none;
+  border-right: none;
+}
+.cntr {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+.cntr-7,
+.cntr-8,
+.cntr-9 {
+  background: linear-gradient(147.93deg, rgba(255, 255, 255, 0.2) 6.68%, rgba(0, 0, 0, 0) 51.71%, rgba(255, 255, 255, 0.2) 93.27%);
+  width: 612px;
+  height: 300px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 20px;
+}
+.cmnt-hdng{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+.name-rating{
+  display: flex;
+  flex-direction: column;
+}
+.rtng{
+  width: 130px;
+  height: 19px;
+}
+.photo {
+  width: 80px;
+  height: 80px;
+}
+
 
 @media (max-width: 400px) {
   body {
@@ -734,6 +810,49 @@ main {
     border: #f8f0f00d solid 2px;
     margin: 20px;
   }
+  .customer-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.hdng-3 p {
+  font-size: 24px;
+}
+.cntr {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.cntr-7,
+.cntr-8,
+.cntr-9 {
+  background: linear-gradient(147.93deg, rgba(255, 255, 255, 0.2) 6.68%, rgba(0, 0, 0, 0) 51.71%, rgba(255, 255, 255, 0.2) 93.27%);
+  width: 312px;
+  height: 350px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+}
+.cmnt-hdng{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+.name-rating{
+  display: flex;
+  flex-direction: column;
+}
+.rtng{
+  width: 130px;
+  height: 19px;
+}
+.photo {
+  width: 80px;
+  height: 80px;
+}
 }
 @media (min-width: 400px) and (max-width: 1120px) {
   .nvgtn-br {
@@ -1024,6 +1143,49 @@ main {
     border: #f8f0f00d solid 2px;
     margin: 20px;
   }
+  .customer-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.hdng-3 p {
+  font-size: 24px;
+}
+.cntr {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.cntr-7,
+.cntr-8,
+.cntr-9 {
+  background: linear-gradient(147.93deg, rgba(255, 255, 255, 0.2) 6.68%, rgba(0, 0, 0, 0) 51.71%, rgba(255, 255, 255, 0.2) 93.27%);
+  width: 350px;
+  height: 330px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+}
+.cmnt-hdng{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+.name-rating{
+  display: flex;
+  flex-direction: column;
+}
+.rtng{
+  width: 130px;
+  height: 19px;
+}
+.photo {
+  width: 80px;
+  height: 80px;
+}
 }
 @media (min-width: 1120px) and (max-width: 1727px) {
   body {
@@ -1152,6 +1314,49 @@ main {
     display: flex;
     flex-direction: column;
   }
+  .customer-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.hdng-3 p {
+  font-size: 24px;
+}
+.cntr {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.cntr-7,
+.cntr-8,
+.cntr-9 {
+  background: linear-gradient(147.93deg, rgba(255, 255, 255, 0.2) 6.68%, rgba(0, 0, 0, 0) 51.71%, rgba(255, 255, 255, 0.2) 93.27%);
+  width: 490px;
+  height: 300px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+}
+.cmnt-hdng{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+.name-rating{
+  display: flex;
+  flex-direction: column;
+}
+.rtng{
+  width: 130px;
+  height: 19px;
+}
+.photo {
+  width: 80px;
+  height: 80px;
+}
 }
 @media (min-width: 1728px) {
   .main-frst-sctn {
@@ -1226,6 +1431,7 @@ main {
   .bottom-cntr {
     gap: 150px;
   }
+  
 }
 @media (min-width: 3600px) {
   .main-frst-sctn {
