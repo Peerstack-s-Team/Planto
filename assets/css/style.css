@@ -11,9 +11,10 @@ header{
 }
 .nvgtn-br{
     display: flex;
-    gap: 30px;
+    gap: 40px;
     width: 545px;
     opacity: 75%;
+    font-size: 25px;
 }
 .nvgtn-br a{
     color: #FFFFFF;
@@ -29,7 +30,7 @@ header{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: -30px;
     font-weight: 900;
-    font-size: 28px;
+    font-size: 30px;
     color: #FFFFFF;
 }
 .hdr-icns{
@@ -53,7 +54,7 @@ main{
 .main-prgrph h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
-    font-size: 118px;
+    font-size: 150px;
     color: #FFFFFF;
     opacity: 75%;
     margin: 70px auto 0px 50px;
@@ -63,7 +64,7 @@ main{
     opacity: 75%;
     width: 893px;
     font-weight: 500;
-    font-size: 23px;
+    font-size: 30px;
     margin: 0px auto 0px 50px;
 }
 .btn-sctn{
@@ -97,6 +98,9 @@ main{
     margin: -90px ;
     z-index: 2;
 }
+.main-rght .plant-one{
+    width: 740px;
+}
 .cntnr-rght {
   display: flex;
   flex-direction: row;
@@ -107,7 +111,7 @@ main{
   background-color: #FFFFFF0D;
   border-radius: 77px;
   width: 490px;
-  height: 344px;
+  height: 444px;
   padding: 300px 40px 0px 0px;
 }
 
@@ -151,12 +155,13 @@ main{
   color: #FFFFFF;
   font-weight: 100;
   line-height: 100%;
-  width: 341px;
-  height: 150px;
+  width: 351px;
+  height: 160px;
   background-color: #FFFFFF0D;
   border-radius: 12px;
   opacity: 75%;
   padding: 35px;
+  font-size: 23px;
 }
 @media (max-width: 400px){
 .header{
@@ -222,6 +227,9 @@ main{
     display: flex;
     flex-direction:column;
 }
+.main-rght .plant-one{
+      width:540px;
+    }
 .main-prgrph h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
@@ -388,6 +396,9 @@ main{
     color: #FFFFFF;
     opacity: 75%;
 }
+.main-rght .plant-one{
+      width:540px;
+    }
 .main-rght span{
     font-weight: 400;
     font-size: 38px;
@@ -423,10 +434,8 @@ main{
         height: 50px;
     }
     .nvgtn-br {
-        display: flex;
-        gap: 30px;
-        width: 545px;
-        opacity: 75%;
+        display: none;
+        
     }
     .hdr-lft img {
         height: 132px;
@@ -450,6 +459,9 @@ main{
       color: #FFFFFF;
       opacity: 75%;
       margin: 70px auto 0px 50px; 
+    }
+    .main-rght .plant-one{
+      width:540px;
     }
     .main-rght img{
       width: 511px;
