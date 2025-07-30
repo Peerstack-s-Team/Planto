@@ -176,6 +176,12 @@ main {
 .hdng {
   text-align: center;
 }
+.our-trnd-plnts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .hdng p {
   position: relative; /* important for pseudo-elements */
   display: inline-block;
@@ -208,7 +214,6 @@ main {
   border-right: none;
 }
 .cntr-top {
-  margin: 0 auto; /* horizontally center */
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -262,7 +267,6 @@ main {
   padding: 10px;
 }
 .cntr-bttm {
-  margin: 0 auto; /* horizontally center */
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -308,7 +312,7 @@ main {
 .our-top-selling {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 30px;
 }
 .top-cntr,
 .bottom-cntr {
@@ -398,7 +402,6 @@ main {
   background-color: rgba(64, 69, 65, 0.5);
   border-radius: 20px;
   border: #f8f0f00d solid 2px;
-  margin: 20px;
 }
 .customer-review {
   display: flex;
@@ -578,11 +581,76 @@ main {
   border-top: none;
   border-right: none;
 }
+footer {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  margin-top: 140px;
+  justify-content: space-around;
+  background-color: #222c1d;
+}
+.ftr-lft {
+  display: flex;
+  flex-direction: column;
+  width: 740px;
+  padding: 30px;
+  gap: 20px;
+}
+.ftr-lft p {
+  font-size: 28px;
+}
+.planto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28px;
+}
+
+.scl-mdia {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 28px;
+}
+
+.ftr-mddl {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  padding: 40px;
+  gap: 10px;
+}
+.ftr-mddl h6 {
+  font-size: 40px;
+}
+.ftr-rght {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 40px;
+}
+
+.ftr-rght h6 {
+  font-size: 40px;
+}
+.subscribe-box input[type="email"] {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.subscribe-box button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
 @media (max-width: 400px) {
   body {
     background-image: url("../images/backgroundimg.jpg");
     background-size: cover;
-    margin: 20px;
   }
   .header {
     display: flex;
@@ -819,7 +887,6 @@ main {
   .our-top-selling {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
     gap: 30px;
   }
   .top-cntr,
@@ -828,6 +895,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
   }
   .hdng-2 {
     text-align: center;
@@ -968,16 +1036,16 @@ main {
   .cntr-lst {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 400px;
+    width: 370px;
     height: 600px;
     gap: 50px;
   }
 
   .last-plnt {
     position: absolute;
-    margin: -350px 0 0 auto;
-    width: 350px;
+    align-self: center;
+    margin: -350px auto;
+    width: 320px;
     height: 400px;
   }
 
@@ -998,6 +1066,70 @@ main {
   }
   .hdng-4 p {
     font-size: 24px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 140px;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #222c1d;
+  }
+  .ftr-lft {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    gap: 20px;
+  }
+  .ftr-lft p {
+    font-size: 16px;
+  }
+  .planto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .scl-mdia {
+    display: none;
+  }
+
+  .ftr-mddl {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 40px;
+    gap: 20px;
+  }
+  .ftr-mddl h6 {
+    font-size: 24px;
+  }
+  .ftr-rght {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px;
+  }
+
+  .ftr-rght h6 {
+    font-size: 24px;
+  }
+  .subscribe-box input[type="email"] {
+    display: none;
+  }
+
+  .subscribe-box button {
+    background-color: white;
+    color: #222c1d;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
   }
 }
 @media (min-width: 400px) and (max-width: 1120px) {
@@ -1056,7 +1188,6 @@ main {
     font-weight: 500;
     font-size: 23px;
     text-align: center;
-    margin: 0 auto;
     max-width: 380px;
   }
   .btn-sctn {
@@ -1159,6 +1290,7 @@ main {
   .cntr-bttm {
     display: flex;
     flex-direction: column;
+    align-self: center;
     justify-content: center;
     text-align: center;
     width: 400px;
@@ -1346,7 +1478,6 @@ main {
   .cntr-lst {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     width: 400px;
     height: 600px;
     gap: 50px;
@@ -1354,8 +1485,9 @@ main {
 
   .last-plnt {
     position: absolute;
-    margin: -350px 0 0 auto;
-    width: 350px;
+    align-self: center;
+    margin: -350px auto;
+    width: 320px;
     height: 400px;
   }
 
@@ -1376,6 +1508,72 @@ main {
   }
   .hdng-4 p {
     font-size: 24px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 140px;
+    justify-content: space-around;
+    background-color: #222c1d;
+  }
+  .ftr-lft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+  }
+  .ftr-lft p {
+    font-size: 28px;
+  }
+  .planto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 28px;
+  }
+
+  .scl-mdia {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 28px;
+  }
+
+  .ftr-mddl {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    padding: 40px;
+    gap: 10px;
+  }
+  .ftr-mddl h6 {
+    font-size: 40px;
+  }
+  .ftr-rght {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px;
+  }
+
+  .ftr-rght h6 {
+    font-size: 40px;
+  }
+  .subscribe-box input[type="email"] {
+    display: none;
+  }
+
+  .subscribe-box button {
+    background-color: white;
+    color: black;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
   }
 }
 @media (min-width: 1120px) and (max-width: 1727px) {
@@ -1454,6 +1652,7 @@ main {
   .our-trnd-plnts {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0px;
   }
   .hdng {
@@ -1474,6 +1673,26 @@ main {
     height: 450px;
     margin-top: 1px;
   }
+  .cntnr-1,
+.cntnr-2,
+.cntnr-3,
+.cntnr-4,
+.cntnr-5,
+.cntnr-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  justify-content: flex-start;
+  gap: 3px;
+  width: 350px;
+  height: 650px;
+  background-color: rgba(64, 69, 65, 0.5);
+  border-radius: 20px;
+  border: #f8f0f00d solid 2px;
+}
   .cntr-tp-prgrph p,
   .cntr-bttm-prgrph p {
     width: 450px;
@@ -1503,7 +1722,8 @@ main {
   .top-cntr,
   .bottom-cntr {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 30px;
   }
   .customer-review {
     display: flex;
@@ -1562,8 +1782,7 @@ main {
   .cntr-lst {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 400px;
+    width: 500px;
     height: 600px;
     gap: 50px;
   }
@@ -1571,6 +1790,7 @@ main {
   .last-plnt {
     position: absolute;
     margin: -350px 0 0 auto;
+    align-self: center;
     width: 350px;
     height: 400px;
   }
@@ -1757,7 +1977,6 @@ main {
     height: 700px;
     width: 2500px;
   }
-  
 
   .right-arrow,
   .left-arrow {
